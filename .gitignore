@@ -1,0 +1,47 @@
+# --- Build .NET ---
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+*.nupkg
+*.snupkg
+
+# --- Tests / couverture ---
+[Tt]est[Rr]esult*/
+*.trx
+coverage*.json
+coverage*.xml
+*.coverage
+
+# --- IDE ---
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secrets (DISCOGS_TOKEN, MUSICBRAINZ_CONTACT) ---
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+
+# --- Données générées par mbsearch ---
+# Exports (-o *.md / *.csv / *.json) et cache local (--cache-dir)
+exports/
+cache/
